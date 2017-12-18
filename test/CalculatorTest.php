@@ -12,13 +12,16 @@ require __DIR__."/../src/Calculator.php";
 class CalculatorTest extends TestCase
 {
 
-    public function addTest(){
 
-    }
 
-    public function test()
+    public function testAdd()
     {
         $calc = new Calculator();
-        $this->assertEquals(4,$calc->add(2,2),'Not right');
+        $this->assertEquals(4,$calc->add(2,2),'Not right adding');
+    }
+    public function testMinus()
+    {
+        $calc = new Calculator();
+        $this->assertEquals(3,$calc->add(6,3),'Not right');
     }
 }
