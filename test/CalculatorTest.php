@@ -22,6 +22,6 @@ class CalculatorTest extends TestCase
     public function testMinus()
     {
         $calc = new Calculator();
-        $this->assertEquals(3,$calc->add(6,3),'Not right');
+        $this->assertEquals(3,$calc->minus(6,3),'Not right');
     }
 }
