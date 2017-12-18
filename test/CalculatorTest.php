@@ -12,8 +12,6 @@ require __DIR__."/../src/Calculator.php";
 class CalculatorTest extends TestCase
 {
 
-
-
     public function testAdd()
     {
         $calc = new Calculator();

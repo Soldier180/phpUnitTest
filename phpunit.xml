@@ -11,6 +11,16 @@
         convertWarningsToExceptions="true"
         processIsolation="false"
         stopOnFailure="false">
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <!-- this is the path of the files included in your clover report -->
+            <directory suffix=".php">./src</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <!-- and this is where your report will be written -->
+        <log type="coverage-clover" target="./clover.xml"/>
+    </logging>
     <testsuites>
         <testsuite name="Unit test">
             <directory>./test/</directory>
@@ -18,3 +28,4 @@
         </testsuite>
     </testsuites>
         </phpunit>
+
