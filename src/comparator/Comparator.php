@@ -11,10 +11,12 @@ class Comparator
     public static function isGreater($a, $b){
         return $a>$b?true:false;
     }
-
+    /**
+     * @codeCoverageIgnore
+     */
     public static function isGreater1($a, $b){
         return $a>$b?true:false;
     }
- 
+
 
 }
