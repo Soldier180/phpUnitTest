@@ -4,7 +4,6 @@ env:
 language: php
 php:
   - "7.1"
-
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
@@ -13,6 +12,5 @@ before_script:
   - composer self-update
   - composer install
 script: phpunit --configuration phpunit.xml --coverage-text
-
-   after_script:
+after_script:
      - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
