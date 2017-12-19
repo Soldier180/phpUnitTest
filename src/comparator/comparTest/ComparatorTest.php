@@ -14,4 +14,21 @@ class ComparatorTest extends PHPUnit\Framework\TestCase
     {
         $this->assertTrue(Comparator::isGreater(7, 6));
     }
+    public function testIsGreater2()
+    {
+        $compar = new Comparator();
+        $args = [5,3];
+        $result = $this->invokeMethod($compar,'isGreater2',$args);
+        self::assertEquals(true,$result);
+        $this->assertTrue(Comparator::isGreater(7, 6));
+    }
+
+    public function invokeMethod(&$object, $methodName, array $parameters = array())
+    {
+        $reflection = new \ReflectionClass(get_class($object));
+        $method = $reflection->getMethod($methodName);
+        $method->setAccessible(true);
+
+        return $method->invokeArgs($object, $parameters);
+    }
 }

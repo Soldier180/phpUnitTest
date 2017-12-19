@@ -19,9 +19,9 @@ class CalculatorTest extends TestCase
         $this->assertEquals(5.0,$calc->add(2.5,2.5),'Not right adding');
         $this->assertEquals(1.0,$calc->add(1.0,0.2),'Not right adding',0.8);
     }
-   /* public function testMinus()
+    public function testMinus()
     {
         $calc = new Calculator();
         $this->assertEquals(3,$calc->minus(6,3),'Not right');
-    }*/
+    }
 }
