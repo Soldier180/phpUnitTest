@@ -19,12 +19,13 @@
     </filter>
     <logging>
         <!-- and this is where your report will be written -->
+        <log type="coverage-html" target="./report"/>
         <log type="coverage-clover" target="./clover.xml"/>
     </logging>
     <testsuites>
         <testsuite name="Unit test">
-            <directory>./test/</directory>
-            <directory>./src/</directory>
+            <directory>./src/comparator/comparTest</directory>
+            <directory>./src/calc/calcTest</directory>
         </testsuite>
     </testsuites>
         </phpunit>
