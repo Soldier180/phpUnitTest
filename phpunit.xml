@@ -20,7 +20,7 @@
     <logging>
         <!-- and this is where your report will be written -->
         <log type="coverage-html" target="./report"/>
-        <log type="coverage-clover" target="./clover.xml"/>
+        <!--<log type="coverage-clover" target="./clover.xml"/>-->
     </logging>
     <testsuites>
         <testsuite name="Unit test">
@@ -28,5 +28,5 @@
             <directory>./src/calc/calcTest</directory>
         </testsuite>
     </testsuites>
-        </phpunit>
+</phpunit>
 
