@@ -17,7 +17,7 @@ class Comparator
     public static function isGreater1($a, $b){
         return $a>$b?true:false;
     }
-    private static function isGreater2($a, $b){
+    public  function isGreater2($a, $b){
         return $a>$b?true:false;
     }
 

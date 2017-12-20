@@ -1,3 +1,11 @@
+notifications:
+  email:
+    recipients:
+      - n.zaretskij@gmail.com
+      #- oleksandr.shkuropat@gmail.com
+      #- winter2007d@gmail.com
+    on_success: always # default: change
+    on_failure: always # default: always
 language: php
 php:
   - "7.1"
