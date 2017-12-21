@@ -7,7 +7,8 @@
  */
 
 use PHPUnit\Framework\TestCase;
-require __DIR__ . "/../Calculator.php";
+require __DIR__.'/../../../vendor/autoload.php';
+//require __DIR__ . "/../Calculator.php";
 
 class CalculatorTest extends TestCase
 {

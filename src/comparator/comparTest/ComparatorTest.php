@@ -6,14 +6,14 @@
  * Time: 20:12
  */
 
-require __DIR__ . '/../Comparator.php';
-
+//require __DIR__ . '/../Comparator.php';
+require __DIR__.'/../../../vendor/autoload.php';
 class ComparatorTest extends PHPUnit\Framework\TestCase
 {
 
     public function testIsGreater()
     {
-        $this->assertTrue(Comparator::isGreater(7, 6));
+        $this->assertTrue(Comparator::isGreater(7, 5));
 
     }
 
