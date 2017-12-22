@@ -2,9 +2,6 @@ notifications:
   email:
     recipients:
       - n.zaretskij@gmail.com # Участинки
-      template:
-            - "%{repository_slug} (%{commit}) : %{message} %{foo} "
-            - "Build details: %{build_url}"
       #- oleksandr.shkuropat@gmail.com
       #- winter2007d@gmail.com
     on_success: always # default: change  Отправка уведомлений на почту при успешном билде
